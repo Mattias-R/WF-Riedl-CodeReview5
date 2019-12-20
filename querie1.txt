@@ -1,0 +1,4 @@
+SELECT `customer`.`customer_ID`, `customer`.`Customer_Name`, `bill`.`Bill_costs`, `additionalcharges`.`Additional_costs`
+FROM `customer` 
+	LEFT JOIN `bill` ON `bill`.`Customer_ID` = `customer`.`customer_ID` 
+	LEFT JOIN `additionalcharges` ON `bill`.`Add_ID` = `additionalcharges`.`add_ID`;

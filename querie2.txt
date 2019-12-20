@@ -1,0 +1,5 @@
+SELECT `customer`.`Customer_Name`, `carstart`.`CarStartTime`, `carend`.`CarEndTime`, `car`.`Car_Type`, `car`.`Car_Name`
+FROM `customer` 
+	LEFT JOIN `carstart` ON `carstart`.`Customer_ID` = `customer`.`customer_ID` 
+	LEFT JOIN `carend` ON `carend`.`Customer_ID` = `customer`.`customer_ID` 
+	LEFT JOIN `car` ON `carend`.`Car_ID` = `car`.`Car_ID`;

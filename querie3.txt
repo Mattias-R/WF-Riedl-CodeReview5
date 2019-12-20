@@ -1,0 +1,4 @@
+SELECT `car`.`Car_ID`, `customer`.`customer_ID`, `location`.`Location_ID`
+FROM `car`
+	, `customer`
+	, `location`;
